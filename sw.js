@@ -1,22 +1,22 @@
-// sw.js - Service Worker para Danis
+// sw.js - Service Worker para Sheilitha Beauty
 
-const CACHE_NAME = 'danis-v1';
+const CACHE_NAME = 'sheilitha-beauty-v1';
 const urlsToCache = [
-  '/danis/',
-  '/danis/index.html',
-  '/danis/admin.html',
-  '/danis/admin-login.html',
-  '/danis/setup-wizard.html',
-  '/danis/editar-negocio.html',
-  '/danis/manifest.json',
-  '/danis/icons/icon-72x72.png',
-  '/danis/icons/icon-96x96.png',
-  '/danis/icons/icon-128x128.png',
-  '/danis/icons/icon-144x144.png',
-  '/danis/icons/icon-152x152.png',
-  '/danis/icons/icon-192x192.png',
-  '/danis/icons/icon-384x384.png',
-  '/danis/icons/icon-512x512.png'
+  '/sheilitha-beauty/',
+  '/sheilitha-beauty/index.html',
+  '/sheilitha-beauty/admin.html',
+  '/sheilitha-beauty/admin-login.html',
+  '/sheilitha-beauty/setup-wizard.html',
+  '/sheilitha-beauty/editar-negocio.html',
+  '/sheilitha-beauty/manifest.json',
+  '/sheilitha-beauty/icons/icon-72x72.png',
+  '/sheilitha-beauty/icons/icon-96x96.png',
+  '/sheilitha-beauty/icons/icon-128x128.png',
+  '/sheilitha-beauty/icons/icon-144x144.png',
+  '/sheilitha-beauty/icons/icon-152x152.png',
+  '/sheilitha-beauty/icons/icon-192x192.png',
+  '/sheilitha-beauty/icons/icon-384x384.png',
+  '/sheilitha-beauty/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/danis/icons/icon-192x192.png');
+            return caches.match('/sheilitha-beauty/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para Danis');
+console.log('✅ Service Worker configurado para Sheilitha Beauty');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);
