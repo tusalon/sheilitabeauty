@@ -1,6 +1,6 @@
 // sw.js - Service Worker para Sheilitha Beauty
 
-const CACHE_NAME = 'sheilitha-beauty-v29';
+const CACHE_NAME = 'sheilitha-beauty-v25';
 const urlsToCache = [
   '/sheilitha-beauty/',
   '/sheilitha-beauty/index.html',
