@@ -1,6 +1,6 @@
 // sw.js - Service Worker para Sheilitha Beauty
 
-const CACHE_NAME = 'sheilitha-beauty-v29';
+const CACHE_NAME = 'sheilitha-beauty-v47';
 const urlsToCache = [
   '/sheilitha-beauty/',
   '/sheilitha-beauty/index.html',
@@ -17,7 +17,14 @@ const urlsToCache = [
   '/sheilitha-beauty/icons/icon-152x152.png',
   '/sheilitha-beauty/icons/icon-192x192.png',
   '/sheilitha-beauty/icons/icon-384x384.png',
-  '/sheilitha-beauty/icons/icon-512x512.png'
+  '/sheilitha-beauty/icons/icon-512x512.png',
+  '/sheilitha-beauty/vendor/react.production.min.js',
+  '/sheilitha-beauty/vendor/react-dom.production.min.js',
+  '/sheilitha-beauty/vendor/babel.min.js',
+  '/sheilitha-beauty/vendor/bcrypt.min.js',
+  '/sheilitha-beauty/vendor/tailwind-browser.js',
+  '/sheilitha-beauty/vendor/lucide/lucide.css',
+  '/sheilitha-beauty/vendor/lucide/lucide.woff2'
 ];
 
 // ============================================
